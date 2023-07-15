@@ -60,9 +60,6 @@ const slice = createSlice({
           state.status = "succeeded";
         },
       )
-      .addDefaultCase((state, action) => {
-        console.log("✅✅ action", action);
-      });
   },
 });
 
