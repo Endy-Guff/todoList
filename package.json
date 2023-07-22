@@ -42,10 +42,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "deploy": "gh-pages -d build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "browserslist": {
     "production": [
@@ -60,6 +59,20 @@
     ]
   },
   "devDependencies": {
-    "prettier": "3.0.0"
+    "@storybook/addon-essentials": "^7.1.0",
+    "@storybook/addon-interactions": "^7.1.0",
+    "@storybook/addon-links": "^7.1.0",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.1.0",
+    "@storybook/preset-create-react-app": "^7.1.0",
+    "@storybook/react": "^7.1.0",
+    "@storybook/react-webpack5": "^7.1.0",
+    "@storybook/testing-library": "^0.2.0",
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "eslint-plugin-storybook": "^0.6.13",
+    "prettier": "3.0.0",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.1.0",
+    "webpack": "^5.88.2"
   }
 }
